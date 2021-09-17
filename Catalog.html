@@ -6,7 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="fonts/Gilory/gilory_font.css">
+	<link rel="script" href="../js/catalog-pages.js">
 	<title>Каталог</title>
 </head>
 <body>
@@ -61,6 +63,19 @@
 		</div>
   </header>
 
+	<main>
+		<h2 class="header2">Номера и цены</h2>
+	</main>
+
+	<div class="row">
+		<div class="toogle closed">
+			<p class="hideable">Скрываемый текст</p>
+		</div>
+		<div class="toogle closed">
+			<p class="hideable">Скрываемый текст</p>
+		</div>
+	</div>
+
 	<footer class="footer">
 		<div class="footer__container">
 			<a class="logo__link" href="/">
@@ -97,5 +112,15 @@
 			</div>
 		</div>
 	</footer>
+
+
+<!-- переключение классов номеров	-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+			$('.toogle').click(function(){
+					$('.toogle').addClass('closed');
+					$(this).removeClass('closed');
+			});
+	</script>
 </body>
 </html>

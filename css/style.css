@@ -28,4 +28,23 @@ body {
   font-weight: 600;
 }
 
+.closed .hideable {
+  display: none;
+}
+
+div .float {
+  float: left;
+}
+
+.header2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+  color: #444443;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
