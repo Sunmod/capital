@@ -2,6 +2,7 @@
 body
   margin: 0
   background-color: #FAF7F0
+  box-sizing: border-box
 
 .btn
   box-shadow: 3px 8px 20px rgba(36, 30, 28, 0.12)
@@ -10,4 +11,51 @@ body
   background-color: #798C92
   &:hover
     background-color: #ADB7B8 !important
+
+.nav__item
+  font-family: Gilroy
+  font-weight: normal
+  font-size: 24px
+  line-height: 28px
+  color: #444443
+  text-decoration: none
+  &:hover
+    font-weight: 600
 //
+
+.footer
+  background-color: #fff
+  width: 100%
+  .footer__container
+    max-width: 270px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    @media (min-width: 834px)
+      max-width: 740px
+    @media (min-width: 1920px)
+      max-width: 940px
+
+    .logo__link
+      display: inline-flex
+      .logo
+        width: 165px
+        height: 55px
+
+    .footer__content
+      display: flex
+      flex-direction: column
+      .nav__list
+        display: flex
+        flex-direction: column
+        align-items: center
+        @media (max-width: 833px)
+          margin-top: 16px
+        .nav__item
+          @media (max-width: 833px)
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            padding: 8px 0

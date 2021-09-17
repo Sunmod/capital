@@ -214,16 +214,5 @@
     width: 730px;
   }
 }
-.header .header__container .nav__list .nav__item {
-  font-family: Gilroy;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  color: #444443;
-  text-decoration: none;
-}
-.header .header__container .nav__list .nav__item:hover {
-  font-weight: 600;
-}
 
 /*# sourceMappingURL=header.css.map */
