@@ -1,8 +1,14 @@
+@font-face {
+  font-family: "Snell Roundhand";
+  src: url("/fonts/SnellRoundhand.ttf") format("ttf"), url("/fonts/SnellRoundhand.woff2") format("woff2"), url("/fonts/SnellRoundhand.otf") format("otf");
+  font-weight: 300;
+}
 body {
   margin: 0;
   background-color: #FAF7F0;
   box-sizing: border-box;
   font-family: Gilroy, sans-serif;
+  color: #444443;
 }
 
 .btn {
@@ -16,16 +22,22 @@ body {
   background-color: #ADB7B8 !important;
 }
 
+.brick {
+  background-image: linear-gradient(159.86deg, #D56847 -29.16%, #AE5D44 114.8%);
+}
+
 .nav__item {
-  font-family: Gilroy;
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
-  color: #444443;
   text-decoration: none;
 }
 .nav__item:hover {
   font-weight: 600;
+}
+
+.row {
+  height: 100px;
 }
 
 .closed .hideable {
@@ -36,15 +48,71 @@ div .float {
   float: left;
 }
 
-.header2 {
+.catalog .header2 {
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
   line-height: 39px;
   text-align: center;
-  color: #444443;
   margin-top: 32px;
   margin-bottom: 0;
+}
+.catalog .subheader {
+  font-family: "Snell Roundhand";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+}
+.catalog .catalog__container {
+  padding: 0 15px;
+}
+.catalog .catalog__container .classes__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px 0;
+}
+.catalog .catalog__container .classes__list .class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+.catalog .catalog__container .classes__list .class svg {
+  margin-left: 10px;
+  width: 35px;
+}
+.catalog .catalog__container .classes__list .class:not(:last-child) {
+  margin-bottom: 8px;
+}
+.catalog .catalog__container .classes__content .slider {
+  position: relative;
+}
+.catalog .catalog__container .classes__content .slider .slide {
+  width: 100%;
+  max-width: 564px;
+  border-radius: 10px;
+}
+.catalog .catalog__container .classes__content .slider .slider__btn-block {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+.catalog .catalog__container .classes__content .slider .slider__btn-block .btn {
+  width: 41px;
+  height: 41px;
 }
 
 /*# sourceMappingURL=style.css.map */

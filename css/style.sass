@@ -1,11 +1,15 @@
 // обнуление стилей
-
+@font-face
+  font-family: "Snell Roundhand"
+  src: url("/fonts/SnellRoundhand.ttf") format('ttf') ,url('/fonts/SnellRoundhand.woff2') format('woff2') ,url('/fonts/SnellRoundhand.otf') format('otf')
+  font-weight: 300
 
 body
   margin: 0
   background-color: #FAF7F0
   box-sizing: border-box
   font-family: Gilroy, sans-serif
+  color: #444443
 
 .btn
   box-shadow: 3px 8px 20px rgba(36, 30, 28, 0.12)
@@ -15,17 +19,19 @@ body
   &:hover
     background-color: #ADB7B8 !important
 
+.brick
+  background-image: linear-gradient(159.86deg, #D56847 -29.16%, #AE5D44 114.8%)
+
 .nav__item
-  font-family: Gilroy
   font-weight: normal
   font-size: 24px
   line-height: 28px
-  color: #444443
   text-decoration: none
   &:hover
     font-weight: 600
 //
-
+.row
+  height: 100px
 .closed
   .hideable
     display: none
@@ -34,12 +40,62 @@ div
   .float
     float: left
 
-.header2
-  font-style: normal
-  font-weight: 600
-  font-size: 26px
-  line-height: 39px
-  text-align: center
-  color: #444443
-  margin-top: 32px
-  margin-bottom: 0
+.catalog
+  .header2
+    font-style: normal
+    font-weight: 600
+    font-size: 26px
+    line-height: 39px
+    text-align: center
+    margin-top: 32px
+    margin-bottom: 0
+
+  .subheader
+    font-family: "Snell Roundhand"
+    font-weight: 300
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    margin: 0
+
+  .catalog__container
+    padding: 0 15px
+    .classes__list
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 32px 0
+      .class
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 170px
+        height: 40px
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 24px
+        color: #FFFFFF
+        border-radius: 10px
+        svg
+          margin-left: 10px
+          width: 35px
+        &:not(:last-child)
+          margin-bottom: 8px
+    .classes__content
+      .slider
+        position: relative
+        .slide
+          width: 100%
+          max-width: 564px
+          border-radius: 10px
+        .slider__btn-block
+          width: 100%
+          position: absolute
+          left: 0
+          bottom: 25px
+          display: flex
+          justify-content: center
+          .btn
+            width: 41px
+            height: 41px
