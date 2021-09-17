@@ -1,6 +1,15 @@
 // обнуление стилей
 body
   margin: 0
+  background-color: #FAF7F0
+
+.btn
+  box-shadow: 3px 8px 20px rgba(36, 30, 28, 0.12)
+
+.grey
+  background-color: #798C92
+  &:hover
+    background-color: #ADB7B8 !important
 //
 
 .header
@@ -10,15 +19,23 @@ body
     max-width: 1920px
     padding: 60px 165px
     margin: 0 auto
-    @media (max-width: 1920px)
+    display: flex
+    justify-content: space-between
+    .nav
+      display: flex
+      .burger-menu
+        display: none
+    @media (max-width: 1919px)
       padding: 110px 54px 40px
-    @media (max-width: 834px)
+      flex-direction: column
+    @media (max-width: 833px)
       padding: 88px 15px 32px
-
+      flex-direction: column
       .nav
-        display: flex
         justify-content: space-between
         align-items: center
+        .burger-menu
+          display: block
         .menu-btn
           display: flex
           justify-content: center
@@ -103,6 +120,9 @@ body
           visibility: visible
           left: 0
 
+    @media (min-width: 834px)
+      align-items: center
+
     .logo__link
       display: inline-block
       .logo
@@ -111,3 +131,60 @@ body
         @media (max-width: 834px)
           width: 165px
           height: 55px
+
+    .header__phone
+      margin: 24px auto 0
+      font-family: Gilroy
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 19px
+      color: #fff
+      text-decoration: none
+      width: 200px
+      height: 45px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 5px
+      box-shadow: 3px 8px 20px rgba(36, 30, 28, 0.12)
+      background-color: #798C92
+      background-image: url("/icons/phone_header.svg")
+      svg
+        margin-right: 5px
+        @media (min-width: 834px)
+          width: 16px
+          height: 16px
+        @media (min-width: 1920px)
+          width: 20px
+          height: 20px
+      @media (min-width: 834px)
+        margin: 0
+        width: 255px
+        height: 55px
+        font-size: 20px
+        line-height: 24px
+      @media (min-width: 1920px)
+        font-size: 24px
+        line-height: 29px
+        font-weight: 500
+
+    .nav__list
+      display: none
+      width: 100%
+      justify-content: space-between
+      margin: 52px 0
+      @media (min-width: 834px)
+        display: flex
+        align-items: center
+      @media (min-width: 1920px)
+        width: 730px
+      .nav__item
+        font-family: Gilroy
+        font-weight: normal
+        font-size: 24px
+        line-height: 28px
+        color: #444443
+        text-decoration: none
+        &:hover
+          font-weight: 600
