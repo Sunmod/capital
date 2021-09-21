@@ -68,6 +68,11 @@ div .float {
 .catalog .catalog__container {
   padding: 0 15px;
 }
+@media (min-width: 834px) {
+  .catalog .catalog__container {
+    padding: 0 113px;
+  }
+}
 .catalog .catalog__container .classes__list {
   display: flex;
   flex-direction: column;
@@ -94,25 +99,25 @@ div .float {
 .catalog .catalog__container .classes__list .class:not(:last-child) {
   margin-bottom: 8px;
 }
-.catalog .catalog__container .classes__content .slider {
+.catalog .catalog__container .classes__content .hotel__room {
   position: relative;
 }
-.catalog .catalog__container .classes__content .slider .slide {
+.catalog .catalog__container .classes__content .hotel__room .slide {
+  display: block;
+  margin: 0 auto;
   width: 100%;
   max-width: 564px;
   border-radius: 10px;
 }
-.catalog .catalog__container .classes__content .slider .slider__btn-block {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 25px;
-  display: flex;
-  justify-content: center;
+.catalog .catalog__container .classes__content .hotel__room .room__description .room__name {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 16px 0;
 }
-.catalog .catalog__container .classes__content .slider .slider__btn-block .btn {
-  width: 41px;
-  height: 41px;
+.catalog .catalog__container .classes__content .hotel__room .room__description .room__price {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -60,6 +60,8 @@ div
 
   .catalog__container
     padding: 0 15px
+    @media (min-width: 834px)
+      padding: 0 113px
     .classes__list
       display: flex
       flex-direction: column
@@ -83,19 +85,20 @@ div
         &:not(:last-child)
           margin-bottom: 8px
     .classes__content
-      .slider
+      .hotel__room
         position: relative
         .slide
+          display: block
+          margin: 0 auto
           width: 100%
           max-width: 564px
           border-radius: 10px
-        .slider__btn-block
-          width: 100%
-          position: absolute
-          left: 0
-          bottom: 25px
-          display: flex
-          justify-content: center
-          .btn
-            width: 41px
-            height: 41px
+        .room__description
+          .room__name
+            font-weight: 800
+            font-size: 16px
+            line-height: 150%
+            margin: 16px 0
+          .room__price
+            display: flex
+            justify-content: space-between

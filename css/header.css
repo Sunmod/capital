@@ -204,6 +204,9 @@
   justify-content: space-between;
   margin: 52px 0;
 }
+.header .header__container .nav__list .nav__item {
+  color: #444443;
+}
 @media (min-width: 834px) {
   .header .header__container .nav__list {
     display: flex;
