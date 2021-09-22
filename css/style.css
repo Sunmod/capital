@@ -48,6 +48,18 @@ div .float {
   float: left;
 }
 
+@media (min-width: 1440px) {
+  .catalog {
+    min-width: 1440px;
+    max-width: 1480px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1920px) {
+  .catalog {
+    max-width: 1590px;
+  }
+}
 .catalog .header2 {
   font-style: normal;
   font-weight: 600;
@@ -57,6 +69,12 @@ div .float {
   margin-top: 32px;
   margin-bottom: 0;
 }
+@media (min-width: 834px) {
+  .catalog .header2 {
+    font-size: 54px;
+    line-height: 81px;
+  }
+}
 .catalog .subheader {
   font-family: "Snell Roundhand";
   font-weight: 300;
@@ -65,19 +83,43 @@ div .float {
   text-align: center;
   margin: 0;
 }
+@media (min-width: 834px) {
+  .catalog .subheader {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 32px;
+  }
+}
 .catalog .catalog__container {
   padding: 0 15px;
 }
 @media (min-width: 834px) {
   .catalog .catalog__container {
-    padding: 0 113px;
+    display: flex;
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1920px) {
+  .catalog .catalog__container {
+    padding: 0;
   }
 }
 .catalog .catalog__container .classes__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 32px 0;
+  margin-top: 32px;
+}
+@media (min-width: 834px) {
+  .catalog .catalog__container .classes__list {
+    margin-right: 20px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1920px) {
+  .catalog .catalog__container .classes__list {
+    margin-right: 80px;
+  }
 }
 .catalog .catalog__container .classes__list .class {
   display: flex;
@@ -92,15 +134,66 @@ div .float {
   color: #FFFFFF;
   border-radius: 10px;
 }
+.catalog .catalog__container .classes__list .class:not(:last-child) {
+  margin-bottom: 8px;
+}
+@media (min-width: 834px) {
+  .catalog .catalog__container .classes__list .class {
+    width: 255px;
+    height: 55px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 1920px) {
+  .catalog .catalog__container .classes__list .class {
+    width: 325px;
+    height: 70px;
+  }
+  .catalog .catalog__container .classes__list .class:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
 .catalog .catalog__container .classes__list .class svg {
   margin-left: 10px;
   width: 35px;
 }
-.catalog .catalog__container .classes__list .class:not(:last-child) {
-  margin-bottom: 8px;
+.catalog .catalog__container .classes__content {
+  margin: 32px auto 0;
+  max-width: 564px;
+}
+@media (min-width: 834px) {
+  .catalog .catalog__container .classes__content {
+    max-width: 100%;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog .catalog__container .classes__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .catalog .catalog__container .classes__content .hotel__room {
   position: relative;
+}
+.catalog .catalog__container .classes__content .hotel__room:not(:first-child) {
+  margin-top: 32px;
+}
+@media (min-width: 834px) {
+  .catalog .catalog__container .classes__content .hotel__room:not(:first-child) {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog .catalog__container .classes__content .hotel__room {
+    margin-top: 50px;
+  }
+  .catalog .catalog__container .classes__content .hotel__room:nth-child(1), .catalog .catalog__container .classes__content .hotel__room:nth-child(2) {
+    margin-top: 0;
+  }
 }
 .catalog .catalog__container .classes__content .hotel__room .slide {
   display: block;
@@ -109,15 +202,180 @@ div .float {
   max-width: 564px;
   border-radius: 10px;
 }
+@media (min-width: 834px) {
+  .catalog .catalog__container .classes__content .hotel__room .slide {
+    margin-left: 0;
+  }
+}
 .catalog .catalog__container .classes__content .hotel__room .room__description .room__name {
   font-weight: 800;
   font-size: 16px;
   line-height: 150%;
   margin: 16px 0;
 }
+@media (min-width: 834px) {
+  .catalog .catalog__container .classes__content .hotel__room .room__description .room__name {
+    font-size: 32px;
+    line-height: 48px;
+    margin: 32px 0 24px;
+  }
+}
 .catalog .catalog__container .classes__content .hotel__room .room__description .room__price {
   display: flex;
   justify-content: space-between;
+}
+.catalog .catalog__container .classes__content .hotel__room .room__description .room__price div {
+  flex-grow: 1;
+}
+.catalog .catalog__container .classes__content .hotel__room .room__description .room__price .type, .catalog .catalog__container .classes__content .hotel__room .room__description .room__price .price {
+  white-space: nowrap;
+  margin-top: 0;
+}
+.catalog .catalog__container .classes__content .hotel__room .room__description .room__price .type {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 5px;
+}
+@media (min-width: 834px) {
+  .catalog .catalog__container .classes__content .hotel__room .room__description .room__price .type {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.catalog .catalog__container .classes__content .hotel__room .room__description .room__price .price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #C36346;
+  margin-bottom: 0;
+}
+@media (min-width: 834px) {
+  .catalog .catalog__container .classes__content .hotel__room .room__description .room__price .price {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.catalog .catalog__container .classes__content .hotel__room .room__description .room__services-list {
+  margin: 12px 0 0;
+  padding: 0;
+}
+@media (min-width: 834px) {
+  .catalog .catalog__container .classes__content .hotel__room .room__description .room__services-list {
+    margin-top: 24px;
+  }
+}
+.catalog .catalog__container .classes__content .hotel__room .room__description .room__services-list .services-list__item {
+  list-style: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  padding-left: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+@media (min-width: 834px) {
+  .catalog .catalog__container .classes__content .hotel__room .room__description .room__services-list .services-list__item {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 30px;
+  }
+}
+.catalog .catalog__container .classes__content .hotel__room .room__description .room__services-list .services-list__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 11px;
+  height: 11px;
+  background: url("../icons/check_mark.svg") no-repeat center;
+  background-size: cover;
+}
+@media (min-width: 834px) {
+  .catalog .catalog__container .classes__content .hotel__room .room__description .room__services-list .services-list__item::before {
+    width: 19px;
+    height: 19px;
+  }
+}
+.catalog .catalog__container .classes__content .hotel__room .room__description .room__reserve {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px auto 0;
+  width: 200px;
+  height: 50px;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 1px solid #EAB19F;
+}
+@media (min-width: 834px) {
+  .catalog .catalog__container .classes__content .hotel__room .room__description .room__reserve {
+    width: 240px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+.catalog .catalog__container .classes__content .hotel__room .room__description .room__reserve svg {
+  margin-left: 8px;
+}
+.catalog .catalog__footer {
+  width: 100%;
+  max-width: 315px;
+  margin: 32px auto;
+}
+@media (min-width: 834px) {
+  .catalog .catalog__footer {
+    max-width: 635px;
+    margin: 40px auto;
+  }
+}
+@media (min-width: 1920px) {
+  .catalog .catalog__footer {
+    margin: 80px 133px 80px auto;
+    max-width: 1050px;
+  }
+}
+.catalog .catalog__footer .text {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0;
+}
+.catalog .catalog__footer .text:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media (min-width: 834px) {
+  .catalog .catalog__footer .text {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+@media (min-width: 1920px) {
+  .catalog .catalog__footer .text {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+  }
+}
+.catalog .catalog__footer .text .link {
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  color: #C26346;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
