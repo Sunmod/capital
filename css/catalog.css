@@ -10,36 +10,6 @@
     max-width: 1590px;
   }
 }
-.catalog .header2 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 39px;
-  text-align: center;
-  margin-top: 32px;
-  margin-bottom: 0;
-}
-@media (min-width: 834px) {
-  .catalog .header2 {
-    font-size: 54px;
-    line-height: 81px;
-  }
-}
-.catalog .subheader {
-  font-family: "Snell Roundhand";
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  margin: 0;
-}
-@media (min-width: 834px) {
-  .catalog .subheader {
-    font-size: 32px;
-    line-height: 40px;
-    margin-top: 32px;
-  }
-}
 .catalog .catalog__container {
   padding: 0 15px;
 }
@@ -155,19 +125,6 @@
 @media (min-width: 834px) {
   .catalog .catalog__container .classes__content .hotel__room .slide {
     margin-left: 0;
-  }
-}
-.catalog .catalog__container .classes__content .hotel__room .room__description .room__name {
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 150%;
-  margin: 16px 0;
-}
-@media (min-width: 834px) {
-  .catalog .catalog__container .classes__content .hotel__room .room__description .room__name {
-    font-size: 32px;
-    line-height: 48px;
-    margin: 32px 0 24px;
   }
 }
 .catalog .catalog__container .classes__content .hotel__room .room__description .room__price {

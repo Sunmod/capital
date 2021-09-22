@@ -36,6 +36,52 @@ body {
   font-weight: 600;
 }
 
+.header2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+@media (min-width: 834px) {
+  .header2 {
+    font-size: 54px;
+    line-height: 81px;
+  }
+}
+
+.subheader {
+  font-family: "Snell Roundhand";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 834px) {
+  .subheader {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 32px;
+  }
+}
+
+.title {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 16px 0;
+}
+@media (min-width: 834px) {
+  .title {
+    font-size: 32px;
+    line-height: 48px;
+    margin: 32px 0 24px;
+  }
+}
+
 .row {
   height: 100px;
 }
@@ -46,6 +92,115 @@ body {
 
 div .float {
   float: left;
+}
+
+.contacts .contacts__container {
+  padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .contacts .contacts__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.contacts .contacts__container .contacts__item .text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  max-width: 290px;
+}
+@media (min-width: 768px) {
+  .contacts .contacts__container .contacts__item .text {
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+.contacts .contacts__container .contacts__item .text:not(:last-child) {
+  margin-bottom: 10px;
+}
+.contacts .contacts__container .contacts__item .text.gps {
+  padding-left: 20px;
+}
+@media (min-width: 768px) {
+  .contacts .contacts__container .contacts__item .text.gps {
+    background: url("../icons/point.svg") no-repeat left center;
+    background-size: 13px 16px;
+  }
+}
+.contacts .contacts__container .contacts__item .text.gps::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  background: url("../icons/point.svg") no-repeat center;
+  background-size: cover;
+  display: block;
+  width: 13px;
+  height: 16px;
+}
+@media (min-width: 768px) {
+  .contacts .contacts__container .contacts__item .text.gps::before {
+    display: none;
+  }
+}
+.contacts .contacts__container .contacts__item .text.phone {
+  padding-left: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+.contacts .contacts__container .contacts__item .text.phone::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  background: url("../icons/phone.svg") no-repeat center;
+  background-size: cover;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.contacts .contacts__container .contacts__item .text.time {
+  padding-left: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #aaa;
+}
+.contacts .contacts__container .contacts__item .text.time::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  background: url("../icons/bi_clock.svg") no-repeat center;
+  background-size: cover;
+  display: block;
+  width: 8px;
+  height: 8px;
+}
+.contacts .contacts__container .contacts__item.requisites .text {
+  font-size: 12px;
+  margin: 0;
+}
+.contacts .contacts__container .contacts__item.requisites .text .bold {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.contacts .contacts__container .contacts__item .contact-block:not(:last-child) {
+  margin-bottom: 15px;
+}
+.contacts .contacts__container .more {
+  max-width: 300px;
+  color: #C26346;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  margin: 24px auto 32px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
