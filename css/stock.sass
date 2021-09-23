@@ -1,0 +1,137 @@
+.stock
+  .stock__container
+    padding: 0 35px
+    max-width: 606px
+    margin: 24px auto 32px
+    @media (min-width: 834px)
+      padding: 0
+      margin-top: 40px
+      margin-bottom: 40px
+    @media (min-width: 1440px)
+      margin-top: 32px
+      max-width: 1040px
+      margin-bottom: 90px
+    .text
+      font-weight: 500
+      font-size: 14px
+      line-height: 21px
+      text-align: center
+      width: 100%
+      margin: 0 auto
+      @media (min-width: 834px)
+        font-size: 24px
+        line-height: 36px
+    .small
+      width: 212px
+      margin: 8px auto 0
+      font-size: 12px
+      line-height: 18px
+      text-align: center
+      @media (min-width: 834px)
+        font-size: 20px
+        line-height: 30px
+        width: 362px
+        margin-top: 24px
+      @media (min-width: 1440px)
+        width: 100%
+        text-align: center
+    .stock__reservation-block
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 24px
+      @media (min-width: 834px)
+        flex-direction: row-reverse
+        justify-content: space-around
+        margin-top: 58px
+        margin-bottom: 40px
+      @media (min-width: 1440px)
+        max-width: 530px
+        margin: 40px auto 80px
+      .stock__reservation-item
+        display: flex
+        justify-content: space-between
+        max-width: 252px
+        width: 100%
+        .reservation
+          width: 115px
+          display: flex
+          flex-direction: column
+          align-items: center
+          input
+            width: 100%
+            height: 30px
+            margin: 0
+            padding: 0
+            display: block
+            background: #FFFFFF
+            border: 0.5px solid #C26346
+            box-sizing: border-box
+            border-radius: 4px
+          label
+            font-weight: 500
+            font-size: 16px
+            line-height: 24px
+            color: #303030
+            opacity: 0.9
+            margin-bottom: 8px
+      .room__reserve
+        margin-top: 24px
+        margin-bottom: 32px
+        @media (min-width: 834px)
+          margin: 0
+    .stock__interesting
+      display: flex
+      flex-direction: column
+      align-items: center
+      @media (min-width: 1440px)
+        flex-direction: row
+      div
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 140px
+        height: 50px
+        font-size: 14px
+        line-height: 21px
+        color: #FFFFFF
+        font-style: italic
+        margin-bottom: 15px
+        font-weight: 500
+        @media (min-width: 834px)
+          font-size: 24px
+          line-height: 36px
+          width: 250px
+          height: 85px
+          @media (min-width: 1440px)
+            margin: 0
+        &::before
+          content: ''
+          position: absolute
+          display: block
+          width: 100%
+          height: 100%
+          background-image: url("../img/interesting.svg")
+          z-index: -1
+      .text
+        font-size: 14px
+        line-height: 21px
+        font-weight: 500
+        max-width: 290px
+        .br
+          display: none
+        @media (min-width: 834px)
+          font-size: 24px
+          line-height: 36px
+          max-width: 500px
+          margin-top: 25px
+          @media (min-width: 1440px)
+            width: 100%
+            margin: 0 0 0 40px
+            max-width: 730px
+            text-align: left
+            .br
+              display: block
+        .color
+          color: #C26346

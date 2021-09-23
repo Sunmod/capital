@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stock.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="fonts/Gilory/gilory_font.css">
@@ -62,9 +63,39 @@
 	</div>
 </header>
 
-	<main>
+	<main class="stock">
 		<h2 class="header2">Акции</h2>
 		<p class="subheader">Спецпредложения</p>
+		<div class="stock__container">
+			<p class="text">При бронировании от 7 суток в период с 09.01.2020 по 20.03.2020 вы можете получить скидку 10%. Для этого при бронировании нужно в дополнительных условиях указать что хотите получить скидку.</p>
+			<p class="small">Предложение действует при условии полной предоплаты проживания.</p>
+			<div class="stock__reservation-block">
+				<div class="stock__reservation-item">
+					<div class="reservation">
+						<label for="in">Заезд</label>
+						<input id="in" type="date">
+					</div>
+					<div class="reservation">
+						<label for="out">Выезд</label>
+						<input id="out" type="date">
+					</div>
+				</div>
+				<a class="room__reserve btn brick" href="#">Бронировать
+					<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+					</svg>
+				</a>
+			</div>
+			<div class="stock__interesting">
+				<div>
+					Интересно
+				</div>
+				<p class="text">
+					В наличии последние номера на праздник <br class="br">
+					Санкт-Петербурга - "Алые паруса". <span class="color">Торопитесь бронировать</span>
+				</p>
+			</div>
+		</div>
 	</main>
 
 <footer class="footer">

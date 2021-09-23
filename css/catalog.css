@@ -207,35 +207,6 @@
     height: 19px;
   }
 }
-.catalog .catalog__container .classes__content .hotel__room .room__description .room__reserve {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 16px auto 0;
-  width: 200px;
-  height: 50px;
-  border-radius: 6px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  text-decoration: none;
-  color: #FFFFFF;
-  border: 1px solid #EAB19F;
-}
-@media (min-width: 834px) {
-  .catalog .catalog__container .classes__content .hotel__room .room__description .room__reserve {
-    width: 240px;
-    height: 60px;
-    font-size: 20px;
-    line-height: 30px;
-    margin-left: 0;
-    margin-top: 40px;
-  }
-}
-.catalog .catalog__container .classes__content .hotel__room .room__description .room__reserve svg {
-  margin-left: 8px;
-}
 .catalog .catalog__footer {
   width: 100%;
   max-width: 315px;
