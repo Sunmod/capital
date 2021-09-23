@@ -1,0 +1,152 @@
+.contacts
+  .contacts__container
+    padding: 0 15px
+    max-width: 1590px
+    margin: 0 auto
+    @media (min-width: 768px)
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+    @media (min-width: 1440px)
+      align-items: flex-start
+      margin-top: calc( 48px - 32px )
+      .title
+        text-align: left
+    .contacts__item
+      .address
+        display: flex
+        flex-direction: column
+      .text
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 21px
+        position: relative
+        display: inline-flex
+        align-items: center
+        margin: 0
+        max-width: 290px
+        @media (min-width: 768px)
+          margin: 0 auto
+          text-align: center
+          flex-direction: column
+          font-size: 18px
+          line-height: 27px
+          max-width: 340px
+        @media (min-width: 1440px)
+          text-align: left
+          flex-direction: row
+          margin: 0
+        &:not(:last-child)
+          margin-bottom: 10px
+        &.gps
+          padding-left: 20px
+          @media (min-width: 768px)
+            background: url("../icons/point.svg") no-repeat left center
+            background-size: 16px 20px
+            padding-left: 30px
+          &::before
+            content: ''
+            left: 0
+            position: absolute
+            background: url("../icons/point.svg") no-repeat center
+            background-size: cover
+            display: block
+            width: 13px
+            height: 16px
+            @media (min-width: 768px)
+              display: none
+        &.phone
+          padding-left: 20px
+          text-decoration: none
+          color: inherit
+          @media (min-width: 768px)
+            font-size: 24px
+            line-height: 36px
+            padding-left: 40px
+            flex-direction: row
+          &::before
+            content: ''
+            left: 0
+            position: absolute
+            background: url("../icons/phone.svg") no-repeat center
+            background-size: cover
+            display: block
+            width: 16px
+            height: 16px
+            @media (min-width: 768px)
+              width: 24px
+              height: 24px
+        &.time
+          padding-left: 15px
+          font-style: normal
+          font-weight: 500
+          font-size: 12px
+          line-height: 18px
+          color: #aaa
+          @media (min-width: 768px)
+            font-size: 16px
+            line-height: 24px
+            flex-direction: row
+            padding-left: 20px
+          &::before
+            content: ''
+            left: 0
+            position: absolute
+            background: url("../icons/bi_clock.svg") no-repeat center
+            background-size: cover
+            display: block
+            width: 8px
+            height: 8px
+            @media (min-width: 768px)
+              width: 13px
+              height: 13px
+        &.option
+          @media (min-width: 768px)
+            font-size: 16px
+            line-height: 24px
+      &.requisites
+        display: flex
+        flex-direction: column
+        @media (min-width: 1440px)
+          align-items: flex-start
+        .text
+          font-size: 12px
+          margin: 0
+          display: block
+          text-align: left
+          @media (min-width: 768px)
+            font-size: 16px
+            line-height: 24px
+            flex-direction: row
+            max-width: 380px
+            text-align: center
+          @media (min-width: 1440px)
+            max-width: 700px
+          .bold
+            font-weight: 700
+            margin-right: 5px
+      .contact-block
+        display: flex
+        flex-direction: column
+      .contact-block:not(:last-child)
+        margin-bottom: 15px
+        @media (min-width: 1440px)
+          margin-bottom: 24px
+    .more
+      display: block
+      max-width: 300px
+      color: #C26346
+      font-size: 14px
+      line-height: 21px
+      font-weight: 500
+      margin: 24px 0 32px
+      @media (min-width: 768px)
+        font-size: 24px
+        line-height: 36px
+        max-width: 516px
+        margin: 32px 0 40px
+      @media (min-width: 1440px)
+        text-align: left
+        margin: 40px 0 80px
