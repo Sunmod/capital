@@ -112,6 +112,85 @@ body {
   margin-left: 8px;
 }
 
+.interesting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1440px) {
+  .interesting {
+    flex-direction: row;
+  }
+}
+.interesting div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  font-style: italic;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+@media (min-width: 834px) {
+  .interesting div {
+    font-size: 24px;
+    line-height: 36px;
+    width: 250px;
+    height: 85px;
+  }
+}
+@media (min-width: 834px) and (min-width: 1440px) {
+  .interesting div {
+    margin: 0;
+  }
+}
+.interesting div::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/interesting.svg");
+  background-size: cover;
+  z-index: -1;
+}
+.interesting .text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  max-width: 290px;
+}
+.interesting .text .br {
+  display: none;
+}
+@media (min-width: 834px) {
+  .interesting .text {
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 500px;
+    margin-top: 25px;
+  }
+}
+@media (min-width: 834px) and (min-width: 1440px) {
+  .interesting .text {
+    width: 100%;
+    margin: 0 0 0 40px;
+    max-width: 730px;
+    text-align: left !important;
+  }
+  .interesting .text .br {
+    display: block;
+  }
+}
+.interesting .text .color {
+  color: #C26346;
+}
+
 .row {
   height: 100px;
 }
