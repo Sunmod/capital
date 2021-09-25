@@ -215,26 +215,5 @@
     margin: 0;
   }
 }
-.footer .footer__container .web__list {
-  display: flex;
-  width: 100px;
-  justify-content: space-between;
-}
-@media (min-width: 834px) {
-  .footer .footer__container .web__list {
-    width: 176px;
-    margin-top: 32px;
-  }
-}
-.footer .footer__container .web__list .link .icon {
-  width: 16px;
-  height: 16px;
-}
-@media (min-width: 834px) {
-  .footer .footer__container .web__list .link .icon {
-    width: 32px;
-    height: 32px;
-  }
-}
 
 /*# sourceMappingURL=footer.css.map */

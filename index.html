@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="fonts/Gilory/gilory_font.css">
   <title>Отель "Капитал". Главная</title>
 </head>
@@ -62,8 +63,131 @@
   </div>
 </header>
 
-  <main>
+  <main class="main">
     <h1 class="main__header">Гостевой дом Капитал. Отель Капитал.</h1>
+    <div class="main__title-block">
+      <div class="main__title-item">
+        <h2 class="title">Капитал</h2>
+        <p class="subtitle">Гостевой дом</p>
+        <p class="text">Мы рады приветствовать Вас в Моём отеле. Надеемся, что этот отель станет и Вашим любимым местом в Санкт-Петербурге. </p>
+        <div class="stock__reservation-block">
+          <div class="stock__reservation-item">
+            <div class="reservation">
+              <label for="in">Заезд</label>
+              <input id="in" type="date">
+            </div>
+            <div class="reservation">
+              <label for="out">Выезд</label>
+              <input id="out" type="date">
+            </div>
+          </div>
+          <a class="room__reserve btn brick" href="#">Бронировать
+            <svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+            </svg>
+          </a>
+        </div>
+        <div class="web__list">
+          <a class="link" href=""><img class="icon" src="./icons/instagram.svg" alt=""></a>
+          <a class="link" href=""><img class="icon" src="./icons/bi_facebook.svg" alt=""></a>
+          <a class="link" href=""><img class="icon" src="./icons/twitter.svg" alt=""></a>
+          <a class="link" href=""><img class="icon" src="./icons/whatsapp.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="main__title-item">
+        <div class="slider">
+          <img class="slide" src="./img/slider/Slide-1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="main__info-block">
+      <div class="main__info-item">
+        <p class="title">Добро пожаловать</p>
+        <div class="main__info-content">
+          <img class="img welcome-img" src="./img/welcome.jpg" alt="">
+          <div class="content">
+            <p class="text welcome">мы находимся в 2 минутах пешком от 3 станций метро, в 10 минутах пешком от Невского проспекта, 20 минутах пешком от Дворцовой площади и набережной Невы.</p>
+            <a class="more" href="">
+              Подробнее <svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+            </svg>
+            </a>
+          </div>
+        </div>
+       </div>
+      <div class="main__info-item">
+        <p class="title custom-margin">Условия проживания</p>
+        <div class="main__info-content flex__row">
+          <img class="img conditions-img" src="./img/conditions.jpg" alt="">
+          <div class="content">
+            <ul class="list">
+              <li class="list__item">Номера категорий эконом, стандарт, полулюкс</li>
+              <li class="list__item">В каждом номере есть кабельное телевидение</li>
+              <li class="list__item">На каждом этаже расположена мини-кухня</li>
+              <li class="list__item">У нас есть номер с джакузи</li>
+              <li class="list__item">У нас есть номера на мансарде</li>
+              <li class="list__item">Мы можем встретить Вас в аэропорту или на вокзале</li>
+            </ul>
+            <a class="more" href="">
+              Подробнее <svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+            </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="main__info-item">
+        <p class="title">Визовая поддержка</p>
+        <div class="main__info-content">
+          <img class="img support-img" src="./img/support.jpg" alt="">
+          <div class="content">
+            <p class="text">
+              Мы предоставляем документы для получения визы.
+              Получение ваучера происходит в автоматическом режиме.
+            </p>
+            <a class="more" href="">
+              Подробнее <svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+            </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main__reviews-block">
+      <p class="title">Отзывы</p>
+      <div class="reviews__slider-block">
+        <div class="reviews__slide">
+          <div class="photo">
+          <!-- фотография -->
+          </div>
+          <div class="reviews__content">
+            <p class="name">Станислав Володин</p>
+            <p class="category">Двухместный номер</p>
+            <p class="description">Мы с супругой провели здесь прекрасные выходные, персонал очень отзывчивый и приветливый. Крайне рекомендую.</p>
+          </div>
+        </div>
+        <div class="reviews__slide">
+          <div class="photo">
+            <!-- фотография -->
+          </div>
+          <div class="reviews__content">
+            <p class="name">Станислав Володин</p>
+            <p class="category">Двухместный номер</p>
+            <p class="description">Мы с супругой провели здесь прекрасные выходные, персонал очень отзывчивый и приветливый. Крайне рекомендую.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="poem">
+        <p class="text">
+          Петербург — многоликий город. Видите: сегодня у него таинственное и пугающее лицо. В белые ночи он очаровательно воздушен. Это — живой, глубоко чувствующий город.
+        </p>
+        <p class="author">
+          Максим Горький. «Жизнь Клима Самгина»
+        </p>
+      </div>
+    </div>
   </main>
 
 <footer class="footer">

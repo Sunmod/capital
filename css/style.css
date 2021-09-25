@@ -3,10 +3,13 @@
   src: url("/fonts/SnellRoundhand.ttf") format("ttf"), url("/fonts/SnellRoundhand.woff2") format("woff2"), url("/fonts/SnellRoundhand.otf") format("otf");
   font-weight: 300;
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-color: #FAF7F0;
-  box-sizing: border-box;
   font-family: Gilroy, sans-serif;
   color: #444443;
 }
@@ -189,6 +192,139 @@ body {
 }
 .interesting .text .color {
   color: #C26346;
+}
+
+.main__header {
+  position: absolute;
+  visibility: hidden;
+}
+
+.stock__reservation-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+@media (min-width: 834px) {
+  .stock__reservation-block {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-top: 58px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .stock__reservation-block {
+    max-width: 530px;
+    margin: 40px auto 80px;
+  }
+}
+.stock__reservation-block .stock__reservation-item {
+  display: flex;
+  justify-content: space-between;
+  max-width: 252px;
+  width: 100%;
+}
+.stock__reservation-block .stock__reservation-item .reservation {
+  width: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stock__reservation-block .stock__reservation-item .reservation input {
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  background: #FFFFFF;
+  border: 0.5px solid #C26346;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.stock__reservation-block .stock__reservation-item .reservation label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #303030;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+.stock__reservation-block .room__reserve {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+@media (min-width: 834px) {
+  .stock__reservation-block .room__reserve {
+    margin: 0;
+  }
+}
+
+.web__list {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+@media (min-width: 834px) {
+  .web__list {
+    width: 176px;
+    margin-top: 32px;
+  }
+}
+.web__list .link .icon {
+  width: 16px;
+  height: 16px;
+}
+@media (min-width: 834px) {
+  .web__list .link .icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.list {
+  margin: 12px 0 0;
+  padding: 0;
+}
+@media (min-width: 834px) {
+  .list {
+    margin-top: 24px;
+  }
+}
+.list .list__item {
+  list-style: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  padding-left: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+@media (min-width: 834px) {
+  .list .list__item {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 30px;
+  }
+}
+.list .list__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 11px;
+  height: 11px;
+  background: url("../icons/check_mark.svg") no-repeat center;
+  background-size: cover;
+}
+@media (min-width: 834px) {
+  .list .list__item::before {
+    width: 19px;
+    height: 19px;
+  }
 }
 
 .row {
