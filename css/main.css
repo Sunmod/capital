@@ -1,0 +1,640 @@
+.main {
+  padding: 0 10px;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 1440px) {
+  .main {
+    padding: 0;
+  }
+}
+.main .main__title-block {
+  padding-top: 32px;
+}
+@media (min-width: 834px) {
+  .main .main__title-block {
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__title-block {
+    display: flex;
+    padding-top: 0;
+  }
+}
+.main .main__title-block .main__title-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 1440px) {
+  .main .main__title-block .main__title-item {
+    width: 50%;
+    max-height: 896px;
+  }
+  .main .main__title-block .main__title-item:first-child {
+    padding-top: 200px;
+    padding-bottom: 70px;
+    padding-left: 165px;
+    align-items: flex-start;
+  }
+}
+.main .main__title-block .main__title-item .title {
+  font-family: "Snell Roundhand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 80px;
+  margin: 0 0 2px;
+  order: 2;
+}
+@media (min-width: 834px) {
+  .main .main__title-block .main__title-item .title {
+    order: 1;
+    font-size: 140px;
+    line-height: 140px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__title-block .main__title-item .title {
+    order: 2;
+  }
+}
+.main .main__title-block .main__title-item .subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  order: 1;
+}
+@media (min-width: 834px) {
+  .main .main__title-block .main__title-item .subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 24px 0;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__title-block .main__title-item .subtitle {
+    width: 525px;
+    text-align: right;
+  }
+}
+.main .main__title-block .main__title-item .text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+  margin: 16px 0 0;
+  order: 2;
+}
+@media (min-width: 834px) {
+  .main .main__title-block .main__title-item .text {
+    max-width: 525px;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__title-block .main__title-item .text {
+    text-align: left;
+  }
+}
+.main .main__title-block .main__title-item .stock__reservation-block {
+  order: 2;
+  width: 250px;
+}
+@media (min-width: 834px) {
+  .main .main__title-block .main__title-item .stock__reservation-block {
+    width: 525px;
+    margin-top: 32px;
+    margin-bottom: 64px;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+}
+.main .main__title-block .main__title-item .web__list {
+  order: 2;
+}
+@media (min-width: 1440px) {
+  .main .main__title-block .main__title-item .web__list {
+    margin-top: auto;
+  }
+}
+.main .main__title-block .main__title-item .slider {
+  width: 100%;
+  max-width: 720px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+@media (min-width: 834px) {
+  .main .main__title-block .main__title-item .slider {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__title-block .main__title-item .slider {
+    max-width: 100%;
+    height: 100%;
+    margin-top: 0;
+  }
+}
+.main .main__title-block .main__title-item .slider .slide {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 345px;
+  border-radius: 10px;
+}
+@media (min-width: 834px) {
+  .main .main__title-block .main__title-item .slider .slide {
+    max-width: 100%;
+    height: 896px;
+    border-radius: 0;
+  }
+}
+.main .main__info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 26px;
+}
+@media (min-width: 834px) {
+  .main .main__info-block {
+    padding-top: 64px;
+    padding-bottom: 40px;
+  }
+}
+.main .main__info-block .main__info-item {
+  margin-top: 26px;
+  max-width: 345px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 834px) {
+  .main .main__info-block .main__info-item {
+    max-width: 800px;
+    margin-top: 0;
+  }
+  .main .main__info-block .main__info-item:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 834px) and (min-width: 1440px) {
+  .main .main__info-block .main__info-item:not(:first-child) {
+    margin-top: 54px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__info-block .main__info-item {
+    max-width: 1060px;
+    padding-bottom: 69px;
+    padding-top: 69px;
+  }
+}
+.main .main__info-block .main__info-item .title {
+  margin: 0 auto 24px;
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  font-family: "Snell Roundhand";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  position: relative;
+  background-color: transparent;
+  z-index: 0;
+}
+@media (min-width: 834px) {
+  .main .main__info-block .main__info-item .title {
+    font-size: 60px;
+    line-height: 76px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__info-block .main__info-item .title {
+    margin-left: 0;
+  }
+  .main .main__info-block .main__info-item .title.custom-margin {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+.main .main__info-block .main__info-item .title::before {
+  position: absolute;
+  content: "";
+  right: -40px;
+  height: 100%;
+  width: 145px;
+  background-color: #FAF7F0;
+  border-radius: 50%;
+  z-index: -1;
+}
+@media (min-width: 834px) {
+  .main .main__info-block .main__info-item .title::before {
+    width: 285px;
+  }
+}
+@media (min-width: 834px) {
+  .main .main__info-block .main__info-item .main__info-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .main .main__info-block .main__info-item .main__info-content.flex__row {
+    flex-direction: row;
+  }
+  .main .main__info-block .main__info-item .main__info-content.flex__row .more {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+.main .main__info-block .main__info-item .img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 10px;
+}
+@media (min-width: 834px) {
+  .main .main__info-block .main__info-item .img {
+    max-width: 392px;
+    margin: 0;
+  }
+  .main .main__info-block .main__info-item .img.conditions-img {
+    height: 250px;
+  }
+}
+@media (min-width: 834px) and (min-width: 1440px) {
+  .main .main__info-block .main__info-item .img.conditions-img {
+    height: 323px;
+    max-width: 504px;
+    margin-top: -60px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__info-block .main__info-item .img {
+    max-width: 490px;
+  }
+  .main .main__info-block .main__info-item .img.support-img, .main .main__info-block .main__info-item .img.welcome-img {
+    margin-top: -110px;
+  }
+}
+@media (min-width: 834px) {
+  .main .main__info-block .main__info-item .content {
+    max-width: 375px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__info-block .main__info-item .content {
+    max-width: 515px;
+  }
+}
+.main .main__info-block .main__info-item .content .text {
+  margin-top: 34px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.main .main__info-block .main__info-item .content .text.welcome::first-letter {
+  font-weight: bold;
+  font-size: 46px;
+  color: #C06245;
+  line-height: 0;
+}
+@media (min-width: 834px) {
+  .main .main__info-block .main__info-item .content .text.welcome::first-letter {
+    font-size: 54px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__info-block .main__info-item .content .text.welcome::first-letter {
+    font-size: 80px;
+  }
+}
+@media (min-width: 834px) {
+  .main .main__info-block .main__info-item .content .text {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__info-block .main__info-item .content .text {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.main .main__info-block .main__info-item .content .more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #798C92;
+  border-radius: 6px;
+}
+.main .main__info-block .main__info-item .content .more svg {
+  margin-left: 10px;
+}
+@media (min-width: 834px) {
+  .main .main__info-block .main__info-item .content .more svg {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 834px) {
+  .main .main__info-block .main__info-item .content .more {
+    width: 225px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.main .main__info-block .main__info-item .content .list {
+  margin: 24px 0;
+}
+@media (min-width: 834px) {
+  .main .main__info-block .main__info-item .content .list {
+    margin-top: 0;
+  }
+  .main .main__info-block .main__info-item .content .list .list__item {
+    width: 390px;
+    margin-bottom: 0;
+  }
+  .main .main__info-block .main__info-item .content .list .list__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 834px) and (min-width: 1440px) {
+  .main .main__info-block .main__info-item .content .list .list__item {
+    font-size: 18px;
+    line-height: 26px;
+    width: 460px;
+  }
+}
+.main .main__reviews-block {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 375px;
+  margin: 0 auto;
+}
+@media (min-width: 834px) {
+  .main .main__reviews-block {
+    max-width: 800px;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__reviews-block {
+    max-width: 1920px;
+    margin: 65px auto 0;
+    padding-bottom: 80px;
+  }
+}
+.main .main__reviews-block .title {
+  font-family: "Snell Roundhand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 63px;
+  color: #79402C;
+  display: inline-block;
+  position: relative;
+}
+@media (min-width: 834px) {
+  .main .main__reviews-block .title {
+    font-size: 100px;
+    line-height: 126px;
+  }
+}
+.main .main__reviews-block .title::after {
+  content: "";
+  position: absolute;
+  background: url("../icons/quotes.svg") no-repeat center;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  z-index: -1;
+  right: -15px;
+}
+@media (min-width: 834px) {
+  .main .main__reviews-block .title::after {
+    width: 110px;
+    height: 110px;
+    top: -15px;
+    right: -40px;
+  }
+}
+.main .main__reviews-block .reviews__slider-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media (min-width: 1440px) {
+  .main .main__reviews-block .reviews__slider-block {
+    padding-left: 165px;
+    justify-content: flex-start;
+  }
+}
+.main .main__reviews-block .reviews__slider-block .reviews__slide {
+  background: #FFF9EA;
+  border: 1px solid #FFDACF;
+  box-sizing: border-box;
+  box-shadow: 0px 6px 24px rgba(28, 27, 25, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  height: 155px;
+  display: none;
+  padding: 18px 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 834px) {
+  .main .main__reviews-block .reviews__slider-block .reviews__slide {
+    max-width: 392px;
+    display: flex;
+    height: 200px;
+    padding: 37px 12px 37px 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__reviews-block .reviews__slider-block .reviews__slide {
+    max-width: 650px;
+    height: 270px;
+    margin-right: 20px;
+    padding: 10px 55px;
+  }
+}
+.main .main__reviews-block .reviews__slider-block .reviews__slide:first-child {
+  display: flex;
+}
+.main .main__reviews-block .reviews__slider-block .reviews__slide .photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  background: url("../icons/dummy.svg") no-repeat center;
+  background-size: cover;
+}
+@media (min-width: 834px) {
+  .main .main__reviews-block .reviews__slider-block .reviews__slide .photo {
+    width: 95px;
+    height: 95px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__reviews-block .reviews__slider-block .reviews__slide .photo {
+    width: 135px;
+    height: 135px;
+  }
+}
+.main .main__reviews-block .reviews__slider-block .reviews__slide .reviews__content {
+  width: 195px;
+}
+@media (min-width: 834px) {
+  .main .main__reviews-block .reviews__slider-block .reviews__slide .reviews__content {
+    width: 230px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__reviews-block .reviews__slider-block .reviews__slide .reviews__content {
+    width: 367px;
+  }
+}
+.main .main__reviews-block .reviews__slider-block .reviews__slide .reviews__content .name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #79402C;
+  margin: 0;
+}
+@media (min-width: 1440px) {
+  .main .main__reviews-block .reviews__slider-block .reviews__slide .reviews__content .name {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.main .main__reviews-block .reviews__slider-block .reviews__slide .reviews__content .category {
+  margin: 2px 0;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #A9A9A9;
+}
+@media (min-width: 1440px) {
+  .main .main__reviews-block .reviews__slider-block .reviews__slide .reviews__content .category {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.main .main__reviews-block .reviews__slider-block .reviews__slide .reviews__content .description {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+}
+@media (min-width: 834px) {
+  .main .main__reviews-block .reviews__slider-block .reviews__slide .reviews__content .description {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__reviews-block .reviews__slider-block .reviews__slide .reviews__content .description {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.main .main__reviews-block .poem {
+  margin: 32px 0 0;
+  width: 100%;
+  max-width: 1590px;
+  border-radius: 14px;
+  padding: 30px;
+  position: relative;
+  background: #798C92 url("../img/poem.svg") no-repeat left bottom;
+  background-size: 145px 75px;
+}
+@media (min-width: 834px) {
+  .main .main__reviews-block .poem {
+    padding: 45px 60px;
+    background-size: 215px 110px;
+    margin: 40px auto 0;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__reviews-block .poem {
+    padding: 88px 120px;
+    margin-top: 80px;
+  }
+}
+.main .main__reviews-block .poem .text {
+  margin: 0;
+  font-family: "Snell Roundhand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+@media (min-width: 834px) {
+  .main .main__reviews-block .poem .text {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__reviews-block .poem .text {
+    font-size: 54px;
+    line-height: 65px;
+  }
+}
+.main .main__reviews-block .poem .author {
+  margin: 16px 0 0;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+@media (min-width: 834px) {
+  .main .main__reviews-block .poem .author {
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+  }
+}
+@media (min-width: 1440px) {
+  .main .main__reviews-block .poem .author {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
