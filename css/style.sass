@@ -81,6 +81,9 @@ body
   text-decoration: none
   color: #FFFFFF
   border: 1px solid #EAB19F
+  &:hover
+    background-color: #E3B1A1 !important
+    background-image: none
   @media (min-width: 834px)
     width: 240px
     height: 60px
@@ -185,6 +188,7 @@ body
         border: 0.5px solid #C26346
         box-sizing: border-box
         border-radius: 4px
+        cursor: pointer
       label
         font-weight: 500
         font-size: 16px
@@ -192,6 +196,7 @@ body
         color: #303030
         opacity: 0.9
         margin-bottom: 8px
+        cursor: pointer
   .room__reserve
     margin-top: 24px
     margin-bottom: 32px
@@ -209,6 +214,8 @@ body
     .icon
       width: 16px
       height: 16px
+      &:hover
+        transform: scale(1.2)
       @media (min-width: 834px)
         width: 32px
         height: 32px

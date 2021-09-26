@@ -214,5 +214,8 @@
   color: #C26346;
   font-weight: 600;
 }
+.catalog .catalog__footer .text .link:hover {
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=catalog.css.map */

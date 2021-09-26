@@ -75,6 +75,9 @@
   padding: 8px 0;
   color: #444443;
 }
+.footer .footer__container .footer__content .nav__list .nav__item:hover {
+  font-weight: bold;
+}
 @media (min-width: 834px) {
   .footer .footer__container .footer__content .nav__list .nav__item {
     font-size: 18px;
@@ -117,6 +120,9 @@
   padding-left: 20px;
   position: relative;
   align-items: center;
+}
+.footer .footer__container .footer__contacts .link:hover {
+  text-decoration: underline;
 }
 .footer .footer__container .footer__contacts .link.phone::before, .footer .footer__container .footer__contacts .link.mail::before {
   content: "";

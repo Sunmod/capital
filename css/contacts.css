@@ -85,6 +85,9 @@
   text-decoration: none;
   color: inherit;
 }
+.contacts .contacts__container .contacts__item .text.phone:hover {
+  text-decoration: underline;
+}
 @media (min-width: 768px) {
   .contacts .contacts__container .contacts__item .text.phone {
     font-size: 24px;
