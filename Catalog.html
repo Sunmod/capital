@@ -69,125 +69,237 @@
 		<p class="subheader">Условия проживания</p>
 		<div class="catalog__container">
 			<div class="classes__list">
-				<div class="class btn grey">Стандарт<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<label for="standart" class="class btn grey">Стандарт<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
 				</svg>
-				</div>
-				<div class="class btn grey">Эконом<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+				</label>
+				<label for="econom" class="class btn grey">Эконом<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
 				</svg>
-				</div>
-				<div class="class btn grey">Полулюкс<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+				</label>
+				<label for="luxe" class="class btn grey">Полулюкс<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
 				</svg>
-				</div>
+				</label>
 			</div>
-			<div class="classes__content">
-				<div class="hotel__room">
-					<img class="slide" src="img/img1.jpg" alt="">
-					<div class="room__description">
-						<p class="title">Одноместный стандарт</p>
-						<div class="room__price">
-							<span class="type">Цена за день</span>
-							<div></div>
-							<span class="price">2200 руб./день</span>
+			<div>
+				<input class="radio" type="radio" name="radio" id="standart" checked>
+				<div class="classes__content">
+					<div class="hotel__room">
+						<img class="slide" src="img/img1.jpg" alt="">
+						<div class="room__description">
+							<p class="title">Одноместный стандарт</p>
+							<div class="room__price">
+								<span class="type">Цена за день</span>
+								<div></div>
+								<span class="price">2200 руб./день</span>
+							</div>
+							<div class="room__price">
+								<span class="type">Сумма</span>
+								<div></div>
+								<span class="price">2200 руб.</span>
+							</div>
+							<ul class="list">
+								<li class="list__item">Собственная ванная комната</li>
+								<li class="list__item">Большой номер</li>
+								<li class="list__item">Wifi бесплатно</li>
+							</ul>
+							<a class="room__reserve btn brick" href="#">Бронировать
+								<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+								</svg>
+							</a>
 						</div>
-						<div class="room__price">
-							<span class="type">Сумма</span>
-							<div></div>
-							<span class="price">2200 руб.</span>
+					</div>
+					<div class="hotel__room">
+						<img class="slide" src="img/img1.jpg" alt="">
+						<div class="room__description">
+							<p class="title">Двухместный стандарт</p>
+							<div class="room__price">
+								<span class="type">Цена за день</span>
+								<div></div>
+								<span class="price">2500 руб./день</span>
+							</div>
+							<div class="room__price">
+								<span class="type">Сумма</span>
+								<div></div>
+								<span class="price">2500 руб.</span>
+							</div>
+							<ul class="list">
+								<li class="list__item">Собственная ванная комната</li>
+								<li class="list__item">Большой номер</li>
+								<li class="list__item">Wifi бесплатно</li>
+							</ul>
+							<a class="room__reserve btn brick" href="#">Бронировать
+								<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+								</svg>
+							</a>
 						</div>
-						<ul class="list">
-							<li class="list__item">Собственная ванная комната</li>
-							<li class="list__item">Большой номер</li>
-							<li class="list__item">Wifi бесплатно</li>
-						</ul>
-						<a class="room__reserve btn brick" href="#">Бронировать
-							<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
-							</svg>
-						</a>
+					</div>
+					<div class="hotel__room">
+						<img class="slide" src="img/img1.jpg" alt="">
+						<div class="room__description">
+							<p class="title">Трехместный стандарт</p>
+							<div class="room__price">
+								<span class="type">Цена за день</span>
+								<div></div>
+								<span class="price">3000 руб./день</span>
+							</div>
+							<div class="room__price">
+								<span class="type">Сумма</span>
+								<div></div>
+								<span class="price">3000 руб.</span>
+							</div>
+							<ul class="list">
+								<li class="list__item">Собственная ванная комната</li>
+								<li class="list__item">Большой номер</li>
+								<li class="list__item">Wifi бесплатно</li>
+							</ul>
+							<a class="room__reserve btn brick" href="#">Бронировать
+								<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="hotel__room">
+						<img class="slide" src="img/img1.jpg" alt="">
+						<div class="room__description">
+							<p class="title">Четырехместный стандарт</p>
+							<div class="room__price">
+								<span class="type">Цена за день</span>
+								<div></div>
+								<span class="price">3500 руб./день</span>
+							</div>
+							<div class="room__price">
+								<span class="type">Сумма</span>
+								<div></div>
+								<span class="price">3500 руб.</span>
+							</div>
+							<ul class="list">
+								<li class="list__item">Собственная ванная комната</li>
+								<li class="list__item">Большой номер</li>
+								<li class="list__item">Wifi бесплатно</li>
+							</ul>
+							<a class="room__reserve btn brick" href="#">Бронировать
+								<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+								</svg>
+							</a>
+						</div>
 					</div>
 				</div>
 
-				<div class="hotel__room">
-					<img class="slide" src="img/img1.jpg" alt="">
-					<div class="room__description">
-						<p class="title">Двухместный стандарт</p>
-						<div class="room__price">
-							<span class="type">Цена за день</span>
-							<div></div>
-							<span class="price">2500 руб./день</span>
+				<input class="radio" type="radio" name="radio" id="econom">
+				<div class="classes__content">
+					<div class="hotel__room">
+						<img class="slide" src="img/img1.jpg" alt="">
+						<div class="room__description">
+							<p class="title">Одноместный эконом</p>
+							<div class="room__price">
+								<span class="type">Цена за день</span>
+								<div></div>
+								<span class="price">1400 руб./день</span>
+							</div>
+							<div class="room__price">
+								<span class="type">Сумма</span>
+								<div></div>
+								<span class="price">1400 руб.</span>
+							</div>
+							<ul class="list">
+								<li class="list__item">Собственная ванная комната</li>
+								<li class="list__item">Большой номер</li>
+								<li class="list__item">Wifi бесплатно</li>
+							</ul>
+							<a class="room__reserve btn brick" href="#">Бронировать
+								<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+								</svg>
+							</a>
 						</div>
-						<div class="room__price">
-							<span class="type">Сумма</span>
-							<div></div>
-							<span class="price">2500 руб.</span>
+					</div>
+					<div class="hotel__room">
+						<img class="slide" src="img/img1.jpg" alt="">
+						<div class="room__description">
+							<p class="title">Двухместный экном</p>
+							<div class="room__price">
+								<span class="type">Цена за день</span>
+								<div></div>
+								<span class="price">1500 руб./день</span>
+							</div>
+							<div class="room__price">
+								<span class="type">Сумма</span>
+								<div></div>
+								<span class="price">1500 руб.</span>
+							</div>
+							<ul class="list">
+								<li class="list__item">Собственная ванная комната</li>
+								<li class="list__item">Большой номер</li>
+								<li class="list__item">Wifi бесплатно</li>
+							</ul>
+							<a class="room__reserve btn brick" href="#">Бронировать
+								<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+								</svg>
+							</a>
 						</div>
-						<ul class="list">
-							<li class="list__item">Собственная ванная комната</li>
-							<li class="list__item">Большой номер</li>
-							<li class="list__item">Wifi бесплатно</li>
-						</ul>
-						<a class="room__reserve btn brick" href="#">Бронировать
-							<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
-							</svg>
-						</a>
+					</div>
+					<div class="hotel__room">
+						<img class="slide" src="img/img1.jpg" alt="">
+						<div class="room__description">
+							<p class="title">Трехместный эконом</p>
+							<div class="room__price">
+								<span class="type">Цена за день</span>
+								<div></div>
+								<span class="price">1800 руб./день</span>
+							</div>
+							<div class="room__price">
+								<span class="type">Сумма</span>
+								<div></div>
+								<span class="price">1800 руб.</span>
+							</div>
+							<ul class="list">
+								<li class="list__item">Собственная ванная комната</li>
+								<li class="list__item">Большой номер</li>
+								<li class="list__item">Wifi бесплатно</li>
+							</ul>
+							<a class="room__reserve btn brick" href="#">Бронировать
+								<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+								</svg>
+							</a>
+						</div>
 					</div>
 				</div>
 
-				<div class="hotel__room">
-					<img class="slide" src="img/img1.jpg" alt="">
-					<div class="room__description">
-						<p class="title">Трехместный стандарт</p>
-						<div class="room__price">
-							<span class="type">Цена за день</span>
-							<div></div>
-							<span class="price">3000 руб./день</span>
+				<input class="radio" type="radio" name="radio" id="luxe">
+				<div class="classes__content">
+					<div class="hotel__room">
+						<img class="slide" src="img/img1.jpg" alt="">
+						<div class="room__description">
+							<p class="title">Полулюкс</p>
+							<div class="room__price">
+								<span class="type">Цена за день</span>
+								<div></div>
+								<span class="price">4000  руб./день</span>
+							</div>
+							<div class="room__price">
+								<span class="type">Сумма</span>
+								<div></div>
+								<span class="price">4000 руб.</span>
+							</div>
+							<ul class="list">
+								<li class="list__item">Собственная ванная комната</li>
+								<li class="list__item">Большой номер</li>
+								<li class="list__item">Wifi бесплатно</li>
+							</ul>
+							<a class="room__reserve btn brick" href="#">Бронировать
+								<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+								</svg>
+							</a>
 						</div>
-						<div class="room__price">
-							<span class="type">Сумма</span>
-							<div></div>
-							<span class="price">3000 руб.</span>
-						</div>
-						<ul class="list">
-							<li class="list__item">Собственная ванная комната</li>
-							<li class="list__item">Большой номер</li>
-							<li class="list__item">Wifi бесплатно</li>
-						</ul>
-						<a class="room__reserve btn brick" href="#">Бронировать
-							<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-
-				<div class="hotel__room">
-					<img class="slide" src="img/img1.jpg" alt="">
-					<div class="room__description">
-						<p class="title">Четырехместный стандарт</p>
-						<div class="room__price">
-							<span class="type">Цена за день</span>
-							<div></div>
-							<span class="price">3500 руб./день</span>
-						</div>
-						<div class="room__price">
-							<span class="type">Сумма</span>
-							<div></div>
-							<span class="price">3500 руб.</span>
-						</div>
-						<ul class="list">
-							<li class="list__item">Собственная ванная комната</li>
-							<li class="list__item">Большой номер</li>
-							<li class="list__item">Wifi бесплатно</li>
-						</ul>
-						<a class="room__reserve btn brick" href="#">Бронировать
-							<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
-							</svg>
-						</a>
 					</div>
 				</div>
 			</div>
@@ -198,20 +310,6 @@
 			<p class="text">Цены на проживание можно узнать, выбрав интересующие Вас даты, на <a class="link" href="index.html">главной странице</a></p>
 		</div>
 	</main>
-
-
-
-<!--	<div class="row">-->
-<!--		<div class="toogle closed">-->
-<!--			<p class="hideable"> Скрываемый текст </p>-->
-<!--		</div>-->
-<!--		<div class="toogle closed">статическая часть-->
-<!--			<p class="hideable">Скрываемый текст</p>-->
-<!--		</div>-->
-<!--		<div class="toogle closed">статическая часть-->
-<!--			<p class="hideable">Скрываемый текст</p>-->
-<!--		</div>-->
-<!--	</div>-->
 	<footer class="footer">
     <div class="footer__container">
       <a class="logo__link" href="index.html">
@@ -248,15 +346,5 @@
       </div>
     </div>
   </footer>
-
-
-<!-- переключение классов номеров	-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script>
-			$('.toogle').click(function(){
-					$('.toogle').addClass('closed');
-					$(this).removeClass('closed');
-			});
-	</script>
 </body>
 </html>

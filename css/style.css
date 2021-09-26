@@ -448,18 +448,6 @@ body {
   background-image: url("../icons/email.svg");
 }
 
-.row {
-  height: 100px;
-}
-
-.closed .hideable {
-  display: none;
-}
-
-div .float {
-  float: left;
-}
-
 .reservation__content {
   flex-direction: column;
   align-items: center;

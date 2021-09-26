@@ -37,6 +37,7 @@
         line-height: 24px
         color: #FFFFFF
         border-radius: 10px
+        cursor: pointer
         &:not(:last-child)
           margin-bottom: 8px
         @media (min-width: 834px)
@@ -53,15 +54,14 @@
         svg
           margin-left: 10px
           width: 35px
-
     .classes__content
       margin: 32px auto 0
       max-width: 564px
+      display: none
       @media (min-width: 834px)
         max-width: 100%
         margin-top: 0
       @media (min-width: 1440px)
-        display: flex
         flex-wrap: wrap
         justify-content: space-between
       .hotel__room
@@ -121,7 +121,6 @@
       margin: 80px 133px 80px auto
       max-width: 1050px
     .text
-      font-family: Gilroy
       font-weight: 500
       font-size: 14px
       line-height: 21px
@@ -144,3 +143,23 @@
         font-weight: 600
         &:hover
           text-decoration: underline
+.radio
+  display: none
+
+
+#standart
+  &:checked + .classes__content
+    display: block
+    @media (min-width: 1440px)
+      display: flex
+#econom
+  &:checked + .classes__content
+    display: block
+    @media (min-width: 1440px)
+      display: flex
+#luxe
+  &:checked + .classes__content
+    display: block
+    @media (min-width: 1440px)
+      display: flex
+      justify-content: space-between
